@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-es">
+<head>
+	<meta charset="UTF-8">
+	<title>Despertador</title>
+	<link rel="stylesheet" href="./CSS/style.css">
+	<script type="module" src="./JS/script.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Despertador</h1>
+		<nav>
+			<ul>
+				<li>
+					<button popovertarget="add-alarm" style="--i: #369aff">Añadir alarma</button>
+					<button popovertarget="set-hora" style="--i: #c036ff">Establecer hora</button>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<div popover id="set-hora">
+		<div class="hora">
+			<label for="time">Introduce una hora</label>
+			<input type="time" id="time">
+			<button onclick="setHour()" >Establecer</button>
+		</div>
+	</div>
+	<div popover id="add-alarm">
+		<div class="alarma">
+			<label for="name">Nombre de la alarma</label>
+			<input type="text" id="name">
+			<label for="alarm">Introduce una hora</label>
+			<input type="time" id="alarm">
+			<button onclick="addAlarm()" style="--i: #4cd026">Añadir</button>
+		</div>
+	</div>
+	<div id="despertador">
+
+	</div>
+	<div id="alarmas">
+
+	</div>
+</body>
+</html>

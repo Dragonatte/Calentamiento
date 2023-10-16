@@ -1,0 +1,7 @@
+function setHour(){
+
+}
+
+function addAlarm(){
+
+}
